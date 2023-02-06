@@ -216,24 +216,146 @@
 
 //Q NO # 13
 
-var snack =prompt("Enter Your Favourite Snack");
+// var snack =prompt("Enter Your Favourite Snack");
 
-var currentAge = prompt("Enter Your Current Age");
+// var currentAge = prompt("Enter Your Current Age");
 
-var maxAge= prompt("Enter Your Maximum Age");
+// var maxAge= prompt("Enter Your Maximum Age");
 
-var eAmount = prompt("Enter Your Estimated Amount Per Day");
+// var eAmount = prompt("Enter Your Estimated Amount Per D ay");
 
-var lifeTime= (maxAge-currentAge)*eAmount
+// var lifeTime= (maxAge-currentAge)*eAmount
 
-document.write("<h1>The Lifetime Supply Calculator:</h1>");
+// document.write("<h1>The Lifetime Supply Calculator:</h1>");
 
-document.write("<br />Favourite Snack: " +snack);
+// document.write("<br />Favourite Snack: " +snack);
 
-document.write("<br />Current Age: " +currentAge);
+// document.write("<br />Current Age: " +currentAge);
 
-document.write("<br />Maximum Age: " +maxAge);
+// document.write("<br />Maximum Age: " +maxAge);
 
-document.write("<br />Amount Of Snack per day: " +eAmount);
+// document.write("<br />Amount Of Snack per day: " +eAmount);
 
-document.write("<br />You Will Need " + lifeTime + " " + snack + " to last you until the ripe old age " + maxAge);
+// document.write("<br />You Will Need " + lifeTime + " " + snack + " to last you until the ripe old age " + maxAge);
+
+//------CHAPTER NO # 6-9
+
+//Q NO # 01
+
+// var a=10;
+
+// document.write("<h1>Result:</h1>");
+// document.write("The Value of a is: " +a);
+// document.write("<br />................................<br />");
+// document.write("<br /><br />The value of is ++a is: "+(++a)+""); 
+// document.write("<br />Now the value of a is: " +a);
+// document.write("<br /><br /><br />The value of a++ is: "+ a++);
+// document.write("<br />Now the value of a is: " +a);
+// document.write("<br /><br /><br />The value of --a is: "+ --a);
+// document.write("<br />Now the value of a is:" +a);
+// document.write("<br /><br /><br />The value of a-- is: "+ a--);
+// document.write("<br />Now the value of a is:" +a);
+
+//Q NO # 02
+
+// var a = 2;
+// var b = 1;
+
+// document.write("a is " +a);
+// document.write("<br />b is" +b);
+
+// var result = --a - --b + ++b + b--;
+
+// --a;1
+// --a - --b;1
+// --a - --b + ++b;2
+// --a - --b + ++b + b--;3
+
+// document.write("<br />result is " +result);
+
+//Q NO # 05
+
+// var num = prompt("Enter a Number");
+
+// var num1 = 5;
+
+// var num2 = 0;
+
+// if (num < 1) {
+
+//     document.write("<h3>TABLE OF 5<h3/>")
+
+//     document.write("" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+
+//     document.write("<br />" + num1 + " X " + ++num2 + " = " + num1 * num2 + "")
+// }
+
+// if (num >= 1) {
+
+//     document.write("<h3>TABLE OF "+num+"<h3/>")
+
+//     document.write("" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+
+//     document.write("<br />" + num + " X " + ++num2 + " = " + num * num2 + "")
+// }
+
+//Q NO # 06
+
+
+var firSub, mrkFirSub, secSub, mrkSecSub, 
+thirSub, mrkThirSub, totMark, firSubPer, secSubPer, thirSubPer
+,sumObtnMrk , sumTotMrk , totPer;
+
+firSub = prompt("Enter the name of first subject");
+secSub = prompt("Enter the name of second subject");
+thirSub = prompt("Enter the name of third subject");
+mrkFirSub = prompt("Enter the marks of " + firSub + " subject");
+mrkSecSub = prompt("Enter the marks of  " + secSub + " subject");
+mrkThirSub = prompt("Enter the marks of " + thirSub + " subject");
+totMark = 100
+firSubPer = mrkFirSub / totMark * 100
+secSubPer = mrkSecSub / totMark * 100
+thirSubPer = mrkThirSub / totMark * 100
+sumObtnMrk = firSubPer + secSubPer + thirSubPer
+sumTotMrk = totMark*3
+totPer = sumObtnMrk/sumTotMrk *100
+document.write(
+    "<table><tr> <th>Subject</th> <th>Total Marks</th> <th>Obtain Marks</th> <th>Percentage</th></tr>" +    
+    "<tr> <td>" + firSub + "</td> <td>" + totMark + "</td> <td>" + mrkFirSub + "</td> <td>" + firSubPer + "%</td></tr>" +
+    "<tr> <td>" + secSub + "</td> <td>" + totMark + "</td> <td>" + mrkSecSub + "</td> <td>" + secSubPer + "%</td></tr>" +
+    "<tr> <td>" + thirSub + "</td> <td>" + totMark + "</td> <td>" + mrkThirSub + "</td> <td>" + thirSubPer + "%</td></tr>" +
+    "<tr> <td></td> <td>" + sumTotMrk + "</td> <td>" + sumObtnMrk + "</td> <td>" + totPer + "%</td></tr> </table>"
+);
+
